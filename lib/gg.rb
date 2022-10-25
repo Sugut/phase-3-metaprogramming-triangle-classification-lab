@@ -11,9 +11,9 @@ class Triangle
        raise TriangleError
      elsif(@a+@b <= @c || @a+@c <= @b || @b+@c <= @a) 
        raise TriangleError
-     elsif(@a==@b && @a==@c && @c==@b)  
+     elsif(@a==@b|| @a==@c|| @c==@b)  
         :equilateral
-     elsif(@a==@b || @b==@c || @a==@c)  
+     elsif(@a==@b || @b==@c)  
         :isosceles
      else
         :scalene 
